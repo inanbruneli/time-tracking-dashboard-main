@@ -34,6 +34,9 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 - HTML5
 - CSS3
 - Mobile First
+- Javascript
+- Axios
+- JSON data
 
 ### Continued development
 
