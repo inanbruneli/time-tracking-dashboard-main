@@ -1,6 +1,6 @@
-# Frontend Mentor - Launch countdown timer solution
+# Frontend Mentor - Time tracking dashboard
 
-This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA).
+This is a solution to the [Time tracking dashboard](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
 
 ## Table of contents
 
