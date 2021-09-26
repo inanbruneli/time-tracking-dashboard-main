@@ -1,0 +1,262 @@
+:root {
+  --primary-blue: hsl(246, 80%, 60%);
+  --very-darkblue: hsl(226, 43%, 10%);
+  --darkblue: hsl(235, 46%, 20%);
+  --blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+  --work: hsl(15, 100%, 70%);
+  --play: hsl(195, 74%, 62%);
+  --study: hsl(348, 100%, 68%);
+  --exercise: hsl(145, 58%, 55%);
+  --social: hsl(264, 64%, 52%);
+  --care: hsl(43, 84%, 65%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  padding: 150px;
+  background-color: var(--very-darkblue);
+}
+
+h1, h3 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.resume {
+  height: 100%;
+  color: white;
+}
+
+.btn-change {
+  z-index: 100;
+  position: relative;
+}
+
+.person {
+  height: 400px;
+  width: 300px;
+  background-image: linear-gradient(to bottom, hsl(246, 80%, 60%), hsl(246, 79%, 68%));
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.options {
+  height: 150px;
+  width: 300px;
+  border-radius: 15px;
+  padding: 35px;
+  background-color: var(--darkblue);
+  font-size: 15px;
+  color: rgba(189, 193, 255, .5);
+  margin-top: -15px;
+}
+
+.photo {
+  width: 100%;
+  height: 150px;
+  border: 2px solid transparent;
+}
+
+.imagem {
+  border: 2px solid white;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-image: url(../images/image-jeremy.png);
+  background-size: contain;
+}
+
+.person h4 {
+  font-size: 16px;
+  color: var(--pale-blue);
+}
+
+.person h1 {
+  font-size: 38px;
+}
+
+.options h3 {
+  margin-bottom: 15px;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.btn-change, .current, .previous {
+  color: white;
+  transition: all .5s;
+}
+
+.cards {
+  margin-left: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: 250px 250px;
+  grid-gap: 30px 30px;
+}
+
+.item-card {
+  color: white;
+}
+
+.icon {
+  height: 30%;
+  width: 100%;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: 92%;
+}
+
+.item-desc {
+  margin-top: -20px;
+  border-radius: 15px;
+  background-color: var(--darkblue);
+  height: 80%;
+  padding: 25px 50px;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.item-desc:hover {
+  background-color: hsl(235, 44%, 36%);
+}
+
+.item-desc h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.item-desc h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.item-desc h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: var(--pale-blue);
+}
+
+.item-card img {
+  margin: 10px 40px;
+  float: right;
+  cursor: pointer;
+}
+
+.icon-work {
+  background-color: var(--work);
+  background-image: url(../images/icon-work.svg);
+}
+
+.icon-play {
+  background-color: var(--play);
+  background-image: url(../images/icon-play.svg);
+}
+
+.icon-study {
+  background-color: var(--study);
+  background-image: url(../images/icon-study.svg);
+}
+
+.icon-exercise {
+  background-color: var(--exercise);
+  background-image: url(../images/icon-exercise.svg);
+}
+
+.icon-social {
+  background-color: var(--social);
+  background-image: url(../images/icon-social.svg);
+}
+
+.icon-care {
+  background-color: var(--care);
+  background-image: url(../images/icon-self-care.svg);
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    padding: 150px 70px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  body {
+    padding: 70px 30px;
+  }
+  .main {
+    display: block;
+  }
+  .person {
+    height: 150px;
+    width: 100%;
+    padding: 20px 15px;
+    display: flex;
+  }
+  .photo {
+    width: 32%;
+    margin-right: 2%;
+  }
+  .person-desc {
+    margin-top: 10px;
+  }
+  .options {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .cards {
+    margin-top: 50px;
+    width: 100%;
+    display: block;
+    margin-left: 0px;
+  }
+  .item-card {
+    margin-bottom: 50px;
+  }
+  .icon {
+    height: 70px;
+    width: 100%;
+  }
+  .item-desc h1, .item-desc h3 {
+    display: inline-block;
+    width: 49%;
+  }
+  .item-desc {
+    height: 140px;
+    padding: 20px 30px;
+  }
+  .item-desc h3 {
+    text-align: right;
+  }
+  .person h1 {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .options {
+    font-size: 18px;
+  }
+  .item-desc h1 {
+    font-size: 40px;
+    font-weight: 300;
+  }
+}
