@@ -21,7 +21,7 @@ This is a solution to the [Time tracking dashboard](https://www.frontendmentor.i
 ![](design/desktop-design.jpg)
 
 - My solution
-![](design/my-design.jpg)
+![](design/my-design.JPG)
 
 ### Links
 
